@@ -1,18 +1,24 @@
 /* google font poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 .work-sans-font {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
 /* google font Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 .inter-font {
   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* google font Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.manrope-font{
+  font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -195,11 +201,12 @@ header{
 #featured{
     width: 100%;
     margin-top: 105px;
+    margin-bottom: 100px;
 }
 .featured-container{
     max-width: 1110px;
     width: 100%;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     gap: 95px;
     margin: 0 auto;
     justify-content: center;
@@ -225,6 +232,50 @@ header{
     font-weight: 700;
     line-height: 28px;
     color: #6C6C6C;
+}
+
+
+/* footer styles */
+footer{
+    width: 100%;
+    min-height: 250px;
+    background-color: #0A0826;
+    /* padding: 50px; */
+    justify-content: center;
+    align-items: center;
+}
+.fcontainer{
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    max-width: 262px;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+.fcontainer .title h3{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.fcontainer .copy p{
+    color: #FFFFFF;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+.social ul{
+    gap: 16px;
+    justify-content: center;
+    padding: 0;
+}
+.social ul li{
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #23213C;
+    border-radius: 50%;
 }
 
 /* for mobile device */
