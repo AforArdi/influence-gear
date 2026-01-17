@@ -183,12 +183,48 @@ header{
     line-height: 22px;
     color: #5E6366;
 }
-
 .see-more{
     font-size: 1rem;
     font-weight: 700;
     color: #E02C6D;
     text-decoration: none;
+}
+
+
+/* featured styles */
+#featured{
+    width: 100%;
+    margin-top: 105px;
+}
+.featured-container{
+    max-width: 1110px;
+    width: 100%;
+    border: 2px solid violet;
+    gap: 95px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.featured-info{
+    max-width: 610px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.featured-title h3{
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0A0826;
+}
+.featured-para{
+    width: 500px;
+}
+.featured-para p{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    color: #6C6C6C;
 }
 
 /* for mobile device */
