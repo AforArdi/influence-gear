@@ -19,21 +19,35 @@
 .display-flex{
     display: flex;
 }
+.btn-primary{
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+}
 .text-primary{
     color: #3A3A3A;
     font-size: 1rem;
     font-weight: 600;
 }
 
-/* main styles */
+/* header styles */
 header{
-    max-width: 1265px;
+    max-width: 1600px;
+    width: 100%;
 }
 #hcontainer{
-    border: 2px solid blueviolet;
+    /* border: 2px solid blueviolet; */
     justify-content: space-between;
     align-items: center;
-    margin: 95px 120px;
+    /* margin: 80px auto 40px; */
+    margin: 0 auto;
+    padding-top: 85px;
+    padding-bottom: 40px;
+    max-width: 1200px;
 }
 .brand p{
     font-size: 1.5rem;
@@ -42,4 +56,44 @@ header{
 }
 .menu ul{
     gap: 34px;
+}
+
+
+/* banner styles */
+.banner-title h2{
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: #3A3A3A;
+}
+.banner-title{
+    max-width: 582px;
+}
+.banner-para{
+    max-width: 505px;
+}
+.banner-info{
+    flex-direction: column;
+    gap: 16px;
+}
+#banner{
+    /* border: 2px solid blueviolet; */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 133px;
+}
+.banner-pic{
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-image: url(../images/Circle\ design.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 475px;
+    height: 475px;
+    margin-top: 50px;
+}
+.banner-pic img{
+    position: relative;
+    top: 30px;
 }
