@@ -184,6 +184,12 @@ header{
     color: #5E6366;
 }
 
+.see-more{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #E02C6D;
+    text-decoration: none;
+}
 
 /* for mobile device */
 @media screen and (max-width: 576px) {
