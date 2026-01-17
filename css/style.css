@@ -16,6 +16,9 @@
 }
 
 /* shared styles */
+.hide{
+    display: none;
+}
 .display-flex{
     display: flex;
 }
@@ -96,4 +99,48 @@ header{
 .banner-pic img{
     position: relative;
     top: 30px;
+}
+
+
+/* sponsors styles */
+#sponsors{
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 68px;
+}
+
+
+/* for mobile device */
+@media screen and (max-width: 576px) {
+    #hcontainer{
+        flex-direction: column;
+        padding-top: 35px;
+        gap: 22px;
+    }
+    #hcontainer .menu ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #banner{
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+    .banner-pic{
+        max-width: 404px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .banner-pic img{
+        width: 100%;
+    }
+    .banner-info{
+        text-align: center;
+        padding: 25px;
+    }
+    .banner-title h2{
+        font-size: 1.75rem;
+        line-height: 42px;
+    }
 }
