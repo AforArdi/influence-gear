@@ -2,7 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* google font Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -36,6 +46,15 @@
     font-size: 1rem;
     font-weight: 600;
 }
+.text-secondary{
+    color: #787885;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.checked{
+    color: orange;
+}
+
 
 /* header styles */
 header{
@@ -104,6 +123,9 @@ header{
 
 
 /* sponsors styles */
+#sponsors{
+    margin-bottom: 100px;
+}
 #sponsors ul{
     max-width: 1110px;
     /* justify-content: space-evenly; */
@@ -114,6 +136,52 @@ header{
     padding: 35px 62px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+}
+
+
+/* collections styles */
+#collection{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+#collection .collection-title p{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+.card{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    width: 329px;
+    height: 476px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 16px;
+}
+.card h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+.card .price{
+    font-size: 1.5rem;
+}
+.rating{
+    gap: 8px;
+}
+.rating .rating-number{
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 22px;
+    color: #5E6366;
 }
 
 
@@ -148,6 +216,9 @@ header{
         font-size: 1.75rem;
         line-height: 42px;
     }
+    #sponsors{
+        margin-bottom: 40px;
+    }
     #sponsors ul{
         display: grid;
         grid-template-columns: repeat(4, auto);
@@ -158,5 +229,18 @@ header{
     }
     #sponsors ul img{
         height: 20px;
+    }
+
+    #collection, .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 15px;
     }
 }
