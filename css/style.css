@@ -336,4 +336,34 @@ footer{
         justify-items: center;
         gap: 15px;
     }
+
+    #featured{
+        margin-bottom: 50px;
+    }
+    #featured .featured-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+        max-width: 329px;
+        width: 100%;
+    }
+    .featured-info{
+        align-items: center;
+    }
+    .featured-title h3{
+        font-size: 1.5rem;
+        line-height: 36px;
+        text-align: center;
+    }
+    .featured-para{
+        width: 100%;
+        text-align: center;
+    }
+    .featured-pic img{
+        width: 300px;
+    }
+
+    footer{
+        
+    }
 }
