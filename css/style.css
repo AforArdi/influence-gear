@@ -48,6 +48,14 @@
     border: none;
     border-radius: 41px;
 }
+.btn-primary:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #E02C6D;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #00000084;
+}
 .text-primary{
     color: #3A3A3A;
     font-size: 1rem;
